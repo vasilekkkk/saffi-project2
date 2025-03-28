@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		console.log('Модель загружена')
 	})
-
+	const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
+    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+    const cube = new THREE.Mesh(geometry, material);
+    cube.position.set(0.5, 0, 0); // Позиция куба
+    scene.add(cube); 
 	function animate() {
 		requestAnimationFrame(animate)
 
