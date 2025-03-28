@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const buttonfirst = document.body.getElementsByClassName('buttonfirst')[0]
 	const buttonsecond = document.body.getElementsByClassName('buttonsecond')[0]
+	const buttonsecond2 = document.body.getElementsByClassName('buttonsecond2')[0]
+	const buttonsecond3 = document.body.getElementsByClassName('buttonsecond3')[0]
+	const buttonsecond4 = document.body.getElementsByClassName('buttonsecond4')[0]
+	const buttonsecond5 = document.body.getElementsByClassName('buttonsecond5')[0]
+	const buttonsecond6 = document.body.getElementsByClassName('buttonsecond6')[0]
+	const buttonsecond7 = document.body.getElementsByClassName('buttonsecond7')[0]
+	const buttonsecond8 = document.body.getElementsByClassName('buttonsecond8')[0]
 	const buttonthird = document.body.getElementsByClassName('buttonthird')[0]
 	const buttonfourth = document.body.getElementsByClassName('buttonfourth')[0]
 	const heart1 = document.body.getElementsByClassName('heart1')[0]
@@ -49,20 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		console.log('Модель загружена')
 	})
-	const geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
-    const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
-    const cube = new THREE.Mesh(geometry, material);
-    cube.position.set(0.5, 0, 0); // Позиция куба
-    scene.add(cube); 
-	function animate() {
-		requestAnimationFrame(animate)
-
-		if (model) {
-			model.rotation.y += 0.005
-		}
-
-		renderer.render(scene, camera)
-	}
 	animate()
 
 	window.addEventListener('resize', onWindowResize, false)
@@ -80,6 +73,41 @@ document.addEventListener('DOMContentLoaded', () => {
 		list2.classList.add('hidden')
 		list3.classList.remove('hidden')
 		option = 'flower2'
+	})
+	buttonsecond2.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower3'
+	})
+	buttonsecond3.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower4'
+	})
+	buttonsecond4.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower5'
+	})
+	buttonsecond5.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower6'
+	})
+	buttonsecond6.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower7'
+	})
+	buttonsecond7.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower8'
+	})
+	buttonsecond8.addEventListener('click', () => {
+		list2.classList.add('hidden')
+		list3.classList.remove('hidden')
+		option = 'flower9'
 	})
 	buttonthird.addEventListener('click', () => {
 		list3.classList.add('hidden')
