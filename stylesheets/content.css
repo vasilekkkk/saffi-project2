@@ -124,7 +124,7 @@ body {
     border-radius: 1vw;
     background-color: #4F66B5;
     border: 0.2vw solid #FFDEFF;
-    z-index: 4;
+    z-index: 6;
 } 
 .text1{
     font-family: 'SF Mono Regular';
