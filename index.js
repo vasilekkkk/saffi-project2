@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	scene.add(directionalLight)
 
 	const loader = new THREE.GLTFLoader()
-	loader.load('./models/romashka.glb', gltf => {
+	loader.load('./models/romashka1.glb', gltf => {
 		model = gltf.scene
 
 		model.scale.set(0.05, 0.05, 0.05)
